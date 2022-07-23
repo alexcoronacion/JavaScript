@@ -27,8 +27,5 @@ function distingueLetras (argumentos) {
 
   }
 
-//}
 
-var cadena;
-cadena=inputs('Ingrese dato: ');
-distingueLetras(cadena);
+distingueLetras("ñalkjsdh39hfjADGA");
