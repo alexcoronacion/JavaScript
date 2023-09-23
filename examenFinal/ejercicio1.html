@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio1</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function distingueLetras (argumentos) {
+      function distingueLetras(argumentos) {
+        var x = 0;
+        var y = 0;
+        var regex = /(\d+)/g;
 
-var x = 0;
-var y = 0;
-var regex=/(\d+)/g;
+        // recorro el string
+        for (var i = 0; i < argumentos.length; i++) {
+          var charCode = argumentos[i].charCodeAt();
 
-
-// recorro el string
-for (var i = 0; i < argumentos.length; i++) {
-  var charCode = argumentos[i].charCodeAt();
-  
-  // si pertenece a las mayúsculas
-  if (charCode >= 65 && charCode <= 90) {
-    x+=argumentos.charAt(i);
-  }
-  // si pertenece a las minúsculas
-  else if (charCode >= 97 && charCode <= 122) {
-    y+=argumentos.charAt(i);
-  }
- 
-}
-document.write("Cadena de Números: "+argumentos.match(regex)+"<br>");
-document.write(`Cadena de letras MAYUSCULAS:  ${x} \n <br> Cadena de letras MINUSCULAS:  ${y} `)
-}
-var cadena;
-cadena=prompt('Ingrese dato: ');
-distingueLetras(cadena);
+          // si pertenece a las mayúsculas
+          if (charCode >= 65 && charCode <= 90) {
+            x += argumentos.charAt(i);
+          }
+          // si pertenece a las minúsculas
+          else if (charCode >= 97 && charCode <= 122) {
+            y += argumentos.charAt(i);
+          }
+        }
+        document.write(
+          "Cadena de Números: " + argumentos.match(regex) + "<br>"
+        );
+        document.write(
+          `Cadena de letras MAYUSCULAS:  ${x} \n <br> Cadena de letras MINUSCULAS:  ${y} `
+        );
+      }
+      var cadena;
+      cadena = prompt("Ingrese dato: ");
+      distingueLetras(cadena);
     </script>
-    
-</body>
+  </body>
 </html>
