@@ -8,11 +8,13 @@
 </head>
 
 <body>
-    <h2>¿Que puede hacer JavasCript?</h2>
-    <p>JavasCript puede cambiar los valores de los atributos HTML...</p>
-    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Enciende la luz</button>
-    <img id="myImage" src="pic_bulbon.gif" style="width: 100px;">
-    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Apaa la Luz</button>
+    <h2>Javascript Math.round</h2>
+    <p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = Math.round(3.14159);
+
+    </script>
 </body>
 
 </html>
