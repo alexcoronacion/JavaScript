@@ -1,3 +1,1 @@
-function myFunction(){
-          document.getElementById("demo").innerHTML="Paragraph changed";
-}
+const str1 = 42 + +"1";
